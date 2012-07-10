@@ -7,6 +7,7 @@ browser.get('/index.php?action=Login&module=Users&login_module=Home&login_action
   $('#user_password', form).val( 'qwerty');
   /** @todo fix submit  */
   $('form#form').submit(function(){
+  
     browser.get( '/index.php?module=Home&action=index', function( res,$ ){
 	var ev = $( 'body' );
 	console.log( $(ev).html() );
